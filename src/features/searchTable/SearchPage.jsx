@@ -9,8 +9,8 @@ import {PaginationControls} from "./components/PaginationControls.jsx";
 
 export const SearchPage = () => {
     const dispatch = useDispatch();
-    const { searchParams } = useSelector((state) => state.searchTable);
-    const { data, isLoading, isError, error } = useGetTableDataQuery(searchParams);
+    const { searchParams, sortConfig } = useSelector((state) => state.searchTable);
+    const { data, isLoading, isError, error } = useGetTableDataQuery({ ...searchParams, sortConfig });
 
     const handleSearch = (newParams) => {
         dispatch(setSearchParams({ ...newParams, page: 1 }));

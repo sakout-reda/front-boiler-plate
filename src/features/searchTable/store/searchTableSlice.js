@@ -8,10 +8,11 @@ const initialState = {
         query: "",
         page: 1,
         pageSize: 10,
-        sortConfig: {
-            key: 'id',
-            direction: 'asc',
+
         },
+    sortConfig: {
+        key: 'id',
+        direction: 'asc',
     },
     totalResults: 0,
 };
