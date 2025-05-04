@@ -1,11 +1,9 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {SearchPage} from "./features/searchTable/SearchPage.jsx";
-
 function App() {
     return (
         <div className="app">
-            <SearchPage/> {}
+           <h1>Hello World !</h1>
         </div>
     );
 }
